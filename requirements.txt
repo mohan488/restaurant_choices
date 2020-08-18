@@ -1,0 +1,9 @@
+Django==3.0.5
+djangorestframework==3.11.1
+django-cors-headers==3.4.0
+django-debug-toolbar==2.2
+django-extensions==3.0.5
+mysql-connector-python==8.0.21
+mysqlclient==2.0.1
+django_mysql==3.8.1
+django_rest_swagger==2.2.0

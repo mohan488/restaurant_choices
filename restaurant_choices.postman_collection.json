@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "8ba70693-3ec5-4c27-8941-5b932b2687fb",
+		"name": "restaurant_choices",
+		"description": "Fueled | Backend Engineer Test\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/services/v1/restaurant?city__icontains=Aber&latitude=57.149453&longitude= -2.172841&userId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/services/v1/restaurant?city__icontains=Aber&latitude=57.149453&longitude= -2.172841&userId=1&postcode__iendswith=1XZ&restaurantName__istartswith=Ang",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"services",
+						"v1",
+						"restaurant"
+					],
+					"query": [
+						{
+							"key": "city__icontains",
+							"value": "Aber"
+						},
+						{
+							"key": "latitude",
+							"value": "57.149453"
+						},
+						{
+							"key": "longitude",
+							"value": " -2.172841"
+						},
+						{
+							"key": "userId",
+							"value": "1"
+						},
+						{
+							"key": "postcode__iendswith",
+							"value": "1XZ"
+						},
+						{
+							"key": "restaurantName__istartswith",
+							"value": "Ang"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/services/v1/restaurant?country=United States",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/services/v1/restaurant?country=United&city=Aberdeen&latitude=57.149453&longitude=-2.172841&userId=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"services",
+						"v1",
+						"restaurant"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "United"
+						},
+						{
+							"key": "city",
+							"value": "Aberdeen"
+						},
+						{
+							"key": "latitude",
+							"value": "57.149453"
+						},
+						{
+							"key": "longitude",
+							"value": "-2.172841"
+						},
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/services/v1/restaurant?country=United States&latitude=57.149453&longitude= -2.172841&userId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/services/v1/restaurant?country=United States&latitude=57.149453&longitude= -2.172841&userId=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"services",
+						"v1",
+						"restaurant"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "United States"
+						},
+						{
+							"key": "latitude",
+							"value": "57.149453"
+						},
+						{
+							"key": "longitude",
+							"value": " -2.172841"
+						},
+						{
+							"key": "userId",
+							"value": "1"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
