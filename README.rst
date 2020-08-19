@@ -8,11 +8,11 @@ Content
 2. Getting Started
 3. DB migrations and updates to data models
 4. Starting the server
-
+5. Testing
 
 
 1. Core Dependencies
-----------
+--------------------
 
 The repository of the Fueled | Backend Engineer Test for services Class Written in Python/Django
 
@@ -24,7 +24,7 @@ MySQL Version 8.0.21
 
 
 2. Getting Started
------------------
+------------------
 Note: explicit commands may differ depending on your OS.
 
     1.	Install Python from https://www.python.org/downloads/
@@ -61,7 +61,7 @@ Note: explicit commands may differ depending on your OS.
 
 
 3. Database Migration:
--------------------
+----------------------
 Navigate to the folder containing manage.py and run the following commands in order.
     1.	python manage.py makemigrations
     2.	python manage.py migrate
@@ -69,7 +69,27 @@ Navigate to the folder containing manage.py and run the following commands in or
 
 
 4. Running the Server:
-------------
+----------------------
 Navigate to the folder containing manage.py and run the following command. python manage.py runserver navigate to http://127.0.0.1:8000/ to go to the home page..
+
+
+5. Testing:
+-----------
+
+For initial testing with API, swagger integrated with the Django server. To check, Additional fitters use postman collection shared in the repo.
+    
+    .. image:: imgs/swagger.*
+    :align: center
+    :scale: 60 %
+==========
+swagger UI
+==========
+
+
+    $ http://127.0.0.1:8000/services/v1/restaurant?city__icontains=Aber&latitude=57.149453&longitude= -2.172841&userId=1&postcode__iendswith=1XZ&restaurantName__istartswith=Ang
+
+ Above API lists all Restaurants. Based on Geographic location (eg., country, city, postal code, restaurant name), supports all Django Search options 
+ (eg., 'in', 'isnull', 'icontains', 'istartswith','iendswith'). returns all favorite user restaurant including remaining restaurant based search and
+ ensures that Restaurant not blacklisted by user.
 
 	
