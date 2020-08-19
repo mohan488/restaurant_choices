@@ -78,9 +78,7 @@ Navigate to the folder containing manage.py and run the following command. pytho
 
 For initial testing with API, swagger integrated with the Django server. To check, Additional fitters use postman collection shared in the repo.
     
-    <img src='imgs/swagger.JPG' height="500px">
-
-    $ http://127.0.0.1:8000/services/v1/restaurant?city__icontains=Aber&latitude=57.149453&longitude= -2.172841&userId=1&postcode__iendswith=1XZ&restaurantName__istartswith=Ang
+    $ http://127.0.0.1:8000/services/v1/restaurant?city__icontains=Aber&latitude=57.149453&longitude=-2.172841&userId=1&postcode__iendswith=1XZ&restaurantName__istartswith=Ang
 
  Above API lists all Restaurants. Based on Geographic location (eg., country, city, postal code, restaurant name), supports all Django Search options 
  (eg., 'in', 'isnull', 'icontains', 'istartswith','iendswith'). returns all favorite user restaurant including remaining restaurant based search and
